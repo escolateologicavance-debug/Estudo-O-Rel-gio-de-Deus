@@ -24,7 +24,8 @@ const assets = [
   './7-img.png',
   './8-img.png',
   './9-img.png',
-  './10-img.png'
+  './10-img.png',
+  './11-img.png'
 ];
 
 // Instalação e Cache
