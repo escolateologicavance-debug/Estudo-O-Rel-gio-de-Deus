@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Catálogo - O Relógio de Deus</title>
+    <style>
+        * { box-sizing: border-box; }
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #f1d292;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Cabeçalho fixo no topo, sem imagem vazando */
+        .topo-container {
+            width: 100%;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('1-img.png');
+            background-size: cover;
+            background-position: center top;
+            padding: 30px 10px 20px 10px;
+            text-align: center;
+            border-bottom: 2px solid #c3a461;
+        }
+
+        .topo-container h1 {
+            font-size: 1.6rem;
+            margin: 0;
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .topo-container h2 {
+            font-size: 1.1rem;
+            margin: 5px 0;
+            color: #c3a461;
+            font-weight: normal;
+        }
+
+        /* NOME DO AUTOR: Grande e centralizado, servindo de divisor */
+        .autor-destaque {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            margin: 15px 0 10px 0;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 12px rgba(195, 164, 97, 0.8);
+            display: block;
+        }
+
+        /* GRID DO CATÁLOGO: Logo abaixo do nome, sem buracos */
+        .grid-catalogo {
+            width: 92%;
+            max-width: 450px;
+            margin: 15px auto 40px auto;
+        }
+
+        .item-link {
+            display: block;
+            text-decoration: none;
+            background: #111;
+            border: 1px solid #333;
+            border-left: 5px solid #c3a461;
+            margin-bottom: 8px;
+            padding: 14px;
+            border-radius: 4px;
+        }
+
+        .item-link h3 {
+            margin: 0;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: #c3a461;
+        }
+
+        .item-link p {
+            margin: 3px 0 0 0;
+            font-size: 0.85rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .destaque {
+            border-left-color: #fff;
+            background: #1a1a1a;
+        }
+
+        .item-link:active {
+            background: #c3a461;
+        }
+        .item-link:active h3, .item-link:active p {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topo-container">
+        <h1>O RELÓGIO DE DEUS</h1>
+        <h2>7 Mil Anos da Humanidade</h2>
+        <div class="autor-destaque">GILBERTO MOREIRA</div>
+    </div>
+
+    <div class="grid-catalogo">
+        
+        <a href="1-tema.html" class="item-link">
+            <h3>MILÊNIO 1</h3>
+            <p>A Queda e a Promessa</p>
+        </a>
+
+        <a href="2.html" class="item-link">
+            <h3>MILÊNIO 2</h3>
+            <p>O Juízo das Águas</p>
+        </a>
+
+        <a href="3.html" class="item-link">
+            <h3>MILÊNIO 3</h3>
+            <p>A Aliança e a Lei</p>
+        </a>
+
+        <a href="4.html" class="item-link">
+            <h3>MILÊNIO 4</h3>
+            <p>O Sol da Justiça (Messias)</p>
+        </a>
+
+        <a href="5.html" class="item-link">
+            <h3>MILÊNIO 5</h3>
+            <p>A Dispersão e a Graça</p>
+        </a>
+
+        <a href="6.html" class="item-link">
+            <h3>MILÊNIO 6</h3>
+            <p>O Fim dos Tempos e a Tribulação</p>
+        </a>
+
+        <a href="7.html" class="item-link">
+            <h3>MILÊNIO 7</h3>
+            <p>O Sábado de Deus (O Milênio)</p>
+        </a>
+
+        <a href="8.html" class="item-link destaque">
+            <h3>MAPA DO MILÊNIO</h3>
+            <p>Visualização Cronológica Completa</p>
+        </a>
+
+        <a href="9.html" class="item-link destaque">
+            <h3>ONDE EU ESTOU NESSA HISTÓRIA?</h3>
+            <p>Gerar Relatório Profético em PDF</p>
+        </a>
+
+    </div>
+
+</body>
+</html>

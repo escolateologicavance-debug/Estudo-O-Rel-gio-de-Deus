@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>O Relógio de Deus</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" href="logo-192.png">
+    <link rel="icon" type="image/png" href="logo-512.png">
+
+    <style>
+        * { box-sizing: border-box; }
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            font-family: 'Arial', sans-serif;
+            color: #f1d292;
+            overflow: hidden;
+        }
+
+        .container-principal {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url('logo-512.png');
+            background-size: cover;
+            background-position: center top;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end; 
+            padding-bottom: 30px;
+        }
+
+        h1.titulo-escatologia {
+            font-size: 10vw;
+            letter-spacing: 4px;
+            margin: 0 0 15px 0;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 20px rgba(255, 215, 0, 0.7);
+        }
+
+        .console-login {
+            background: rgba(10, 10, 10, 0.95);
+            border: 1px solid #c3a461;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 320px;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .btn-acessar {
+            width: 100%;
+            padding: 14px;
+            background: #c3a461;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .info-rodape {
+            text-align: center;
+            width: 100%;
+        }
+
+        .info-rodape b {
+            font-size: 1.2rem;
+            color: #fff;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .info-rodape span {
+            font-size: 0.9rem;
+            display: block;
+        }
+
+        .slogan {
+            font-style: italic;
+            color: #c3a461;
+            font-weight: bold;
+            margin-top: 4px;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            h1.titulo-escatologia { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-principal">
+        
+        <h1 class="titulo-escatologia">ESCATOLOGIA</h1>
+
+        <div class="console-login">
+            <input type="text" id="user" placeholder="Nome de Usuário">
+            <input type="password" id="pass" placeholder="Senha Profética">
+            <button class="btn-acessar" onclick="validarAcesso()">ACESSAR CRONOLOGIA</button>
+        </div>
+
+        <div class="info-rodape">
+            <b>Gilberto Moreira</b>
+            <span>Faculdade Teologia AVANCE</span>
+            <span class="slogan">"Ultrapassando limites!"</span>
+        </div>
+
+    </div>
+
+    <script>
+        function validarAcesso() {
+            const senhaEntrada = document.getElementById('pass').value;
+            const senhaCorreta = "mtbrasil";
+
+            if (senhaEntrada === senhaCorreta) {
+                window.location.href = "1.html";
+            } else {
+                alert("Acesso Negado: Senha Profética Incorreta.");
+            }
+        }
+
+        // Deixando o campo de senha aceitar o "Enter" do teclado
+        document.getElementById('pass').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                validarAcesso();
+            }
+        });
+    </script>
+
+</body>
+</html>
